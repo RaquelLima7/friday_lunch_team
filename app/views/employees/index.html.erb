@@ -1,0 +1,49 @@
+<div class="container mt-5">
+  <% if notice %>
+    <p id="notice">
+      <div class="alert alert-success" role="alert">
+        <%= notice %>
+      </div>
+    </p>
+  <% end %>
+
+  <h1 class="text-center m-5">Employees</h1>
+
+  <div class="d-flex">
+    <div class="pe-3">
+      <%= link_to 'New Employee', new_employee_path, class: 'btn btn-primary' %>
+    </div>
+    <div class="pe-3">
+      <%= link_to 'New Blind Date', new_blind_date_path, class: 'btn btn-success' %>
+    </div>
+    <div class="pe-3">
+      <%= link_to 'All Blind Dates', blind_dates_path, class: 'btn btn-secondary' %>
+    </div>
+  </div>
+  
+  <table class="table mt-3">
+    <thead class='table-active th-text-color'>
+      <tr>
+        <th class="align-middle text-center">Name</th>
+        <th class="align-middle text-center">Unit</th>
+        <th class="align-middle text-center">Restaurant</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @employees.each do |employee| %>
+        <tr>
+          <td><%= employee.name %></td>
+          <td><%= employee.unit %></td>
+          <td><%= employee.restaurant %></td>
+          <td><%= link_to 'Show', employee %></td>
+          <td><%= link_to 'Edit', edit_employee_path(employee) %></td>
+          <td><%= link_to 'Destroy', employee, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+</div>

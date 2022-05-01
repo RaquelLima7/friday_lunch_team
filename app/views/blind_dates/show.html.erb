@@ -1,0 +1,40 @@
+<div class="container mt-5">
+  <p id="notice"><%= notice %></p>
+
+  <h3 class="text-center m-5">
+    <strong>Blind Date:</strong>
+    <%= @blind_date.event %>
+  </h3>
+  <table class="mt-5">
+    <tbody>
+      <tr>
+      <th>Team:</th>
+        <% @blind_date.teams.each do |teams| %>
+          <td> <%= teams %></td>
+        <% end %>
+      </tr>
+      <tr>
+      <th>Employees:</th>
+        <% @blind_date.employees.each do |employees| %>
+          <td> <%= employees %></td>
+        <% end %>
+      </tr>
+      <tr>
+      <th>Leaders:</th>
+        <% @blind_date.leaders.each do |leaders| %>
+          <td> <%= leaders %></td>
+        <% end %>
+      </tr>
+      <tr>
+      <th>Restaurants: </th>
+        <% @blind_date.restaurants.each do |restaurants| %>
+          <td> <%= restaurants %></td>
+        <% end %>
+      </tr>
+    </tbody>
+  </table>
+
+    <div class="mt-4">
+      <%= link_to 'Back', blind_dates_path, class: 'btn btn-primary' %>
+    </div>
+</div>
