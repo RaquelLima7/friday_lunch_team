@@ -16,7 +16,7 @@
       <tr>
       <th>Employees:</th>
         <% @blind_date.employees.each do |employees| %>
-          <td> <%= employees %></td>
+          <td> <%= employees.join(', ') %></td>
         <% end %>
       </tr>
       <tr>
