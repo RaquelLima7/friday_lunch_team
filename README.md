@@ -1,7 +1,5 @@
-# Friday Lunch Team
+<h1 align="center">Friday Lunch Team</h1>
 <br>
-
-Friday Lunch Team is a Rails system to include employees in lunches according to the number of employees, allowing the inclusion of a new employee. When registering an employee, he/she must inform his/her unit and the preferred restaurant. By clicking on "New Blind Date" you must inform the day and the system will automatically sort the employees into groups and choose a leader. On the page to view all Blind Dates, the day will appear, and, clicking to view, you can see the separation by teams, its leader, employees, and restaurant (which is the restaurant informed by the leader).
 
 <p align="center">
   <a href="https://ruby-doc.org/core-3.0.1/">
@@ -12,6 +10,14 @@ Friday Lunch Team is a Rails system to include employees in lunches according to
   </a>
 </p>
 
+<br>
+
+## Project
+
+Friday Lunch Team is a Rails system to include employees in lunches according to the number of employees, allowing the inclusion of a new employee. When registering an employee, he/she must inform his/her unit and the preferred restaurant. By clicking on "New Blind Date" you must inform the day and the system will automatically sort the employees into groups and choose a leader. On the page to view all Blind Dates, the day will appear, and, clicking to view, you can see the separation by teams, its leader, employees, and restaurant (which is the restaurant informed by the leader).
+
+## Screenshot
+![](https://github.com/RaquelLima7/friday_lunch_team/blob/master/app/assets/images/friday-lunch-team.gif)
 ## Stack the Project
 
 - **Ruby on Rails**
