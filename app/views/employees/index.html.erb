@@ -37,9 +37,9 @@
           <td><%= employee.name %></td>
           <td><%= employee.unit %></td>
           <td><%= employee.restaurant %></td>
-          <td><%= link_to 'Show', employee %></td>
-          <td><%= link_to 'Edit', edit_employee_path(employee) %></td>
-          <td><%= link_to 'Destroy', employee, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td><%= link_to 'Show', employee, class: 'text-decoration-none' %></td>
+          <td><%= link_to 'Edit', edit_employee_path(employee), class: 'text-decoration-none' %></td>
+          <td><%= link_to 'Destroy', employee, class: 'text-decoration-none', method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
       <% end %>
     </tbody>

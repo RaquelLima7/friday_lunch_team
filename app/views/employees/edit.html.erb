@@ -1,6 +1,20 @@
-<h1>Editing Employee</h1>
+<div class="container mt-5">
+  <p id="notice"><%= notice %></p>
 
-<%= render 'form', employee: @employee %>
+  <h3 class="text-center m-5">
+    <strong>Editing Employee</strong>
+  </h3>
 
-<%= link_to 'Show', @employee %> |
-<%= link_to 'Back', employees_path %>
+  <div class="row mt-2">
+    <div class="col-12 col-md-6 offset-lg-3">
+      <div class="text-dark p-3 shadow">
+        <%= render 'form', employee: @employee %>
+
+        <div class="text-center mt-2">
+          <%= link_to 'Show', @employee, class: 'btn btn-success' %> |
+          <%= link_to 'Back', employees_path, class: 'btn btn-primary'%>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
